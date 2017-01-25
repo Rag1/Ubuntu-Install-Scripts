@@ -1,7 +1,3 @@
-echo  "Press [Enter] to start cmake"
-echo ". Remember dude, both anaconda environemtns (2.7 and 3.5) have to be removed from the path environment before proceeding. If not, take a hike."
-read temp
-
 cd opencv
 mkdir build
 cd build
@@ -33,7 +29,6 @@ cmake -DCMAKE_BUILD_TYPE=RELEASE \
  -DBUILD_opencv_java=OFF \
  -DENABLE_AVX=ON \
  -DBUILD_opencv_freetype=OFF ..
-
 echo "Press [Enter] to configure cmake"
 read temp
 
@@ -48,3 +43,4 @@ sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 
 echo "Congratulations! You have just installed OpenCV. And that's all, folks! :P"
+

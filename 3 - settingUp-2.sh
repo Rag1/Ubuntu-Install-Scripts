@@ -16,4 +16,11 @@ sudo apt-get install vlc -y
 #sudo apt-get install google-chrome-stable -y
 
 sudo apt-get install chromium-browser -y
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get install atom
+git clone https://github.com/vim/vim.git
+cd vim/src
+make
+sudo apt-get install okular
 
